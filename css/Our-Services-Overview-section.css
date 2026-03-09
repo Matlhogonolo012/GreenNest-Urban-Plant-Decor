@@ -17,13 +17,11 @@
     line-height: 1.5;
 }
 
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-
 
 .service-card {
     color: #677353;
@@ -53,25 +51,75 @@
     line-height: 1.4;
 }
 
+@media (max-width:1024px){
 
-@media(max-width: 900px) {
-    .services-section {
-        padding: 60px 20px;
-    }
+.services-section{
+padding:60px 40px;
+}
 
-    .services-grid {
-        grid-template-columns: 1fr; 
-    }
+.services-section h1.services-title{
+font-size:40px;
+}
 
-    .service-card img {
-        width: 100%;
-    }
+.services-grid{
+grid-template-columns:repeat(2,1fr);
+}
 
-    .service-card h2 {
-        font-size: 20px;
-    }
+}
 
-    .service-card p {
-        font-size: 14px;
-    }
+@media (max-width:600px){
+
+.services-section{
+padding:50px 25px;
+}
+
+.services-section h1.services-title{
+font-size:32px;
+}
+
+.services-section p.services-subtitle{
+font-size:14px;
+margin-bottom:40px;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+.service-card h2{
+font-size:20px;
+}
+
+.service-card p{
+font-size:13px;
+}
+
+}
+
+@media (max-width:360px){
+
+.services-section{
+padding:40px 15px;
+}
+
+.services-section h1.services-title{
+font-size:26px;
+}
+
+.services-section p.services-subtitle{
+font-size:13px;
+}
+
+.service-card{
+padding:16px;
+}
+
+.service-card h2{
+font-size:18px;
+}
+
+.service-card p{
+font-size:12px;
+}
+
 }

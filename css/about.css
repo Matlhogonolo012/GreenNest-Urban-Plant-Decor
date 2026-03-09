@@ -1,0 +1,160 @@
+.about-intro {
+    background-color: #677353;
+    color: #F2F5F0;
+    padding: 100px 100px 60px;
+    text-align: left;
+}
+
+.about-intro h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.about-intro p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.before-after .ba-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.before-after {
+    background-color: #F2F5F0;
+    color: #677353;
+    padding: 80px 100px;
+    text-align: left;
+}
+
+.before-after .ba-subtitle {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.before-after .ba-title {
+    font-size: 56px;
+    margin-bottom: 30px;
+}
+
+.before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.ba-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.ba-item img.ba-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.ba-item .ba-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #F2F5F0;
+    background-color: rgba(103,115,83,0.7);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+@media (max-width: 900px){
+
+.about-intro{
+    padding: 100px 40px 40px;
+}
+
+.about-intro h1{
+    font-size: 40px;
+}
+
+.about-intro p{
+    font-size: 15px;
+}
+
+.before-after{
+    padding: 60px 40px;
+}
+
+.before-after .ba-title{
+    font-size: 40px;
+}
+
+.before-after-grid{
+    grid-template-columns: 1fr;
+}
+
+.ba-item img.ba-image{
+    height: 220px;
+}
+
+}
+
+@media (max-width: 600px){
+
+.about-intro{
+    padding: 80px 25px 40px;
+}
+
+.about-intro h1{
+    font-size: 32px;
+}
+
+.about-intro p{
+    font-size: 14px;
+}
+
+.before-after{
+    padding: 50px 25px;
+}
+
+.before-after .ba-title{
+    font-size: 32px;
+}
+
+.ba-item img.ba-image{
+    height: 200px;
+}
+
+}
+
+@media (max-width: 360px){
+
+.about-intro{
+    padding: 80px 15px 30px;
+}
+
+.about-intro h1{
+    font-size: 26px;
+}
+
+.about-intro p{
+    font-size: 13px;
+}
+
+.before-after{
+    padding: 40px 15px;
+}
+
+.before-after .ba-title{
+    font-size: 26px;
+}
+
+.ba-item img.ba-image{
+    height: 170px;
+}
+
+.ba-item .ba-name{
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+}
