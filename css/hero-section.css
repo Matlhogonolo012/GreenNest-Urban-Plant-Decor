@@ -33,6 +33,9 @@
     border-radius: 2px;
     text-decoration: none;
 }
+.hero-btn:hover{
+    opacity: 0.8;
+}
 
 .hero-image {
     flex: 5;

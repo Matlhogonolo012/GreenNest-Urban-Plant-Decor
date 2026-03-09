@@ -1,0 +1,77 @@
+.page-not-found {
+    background-color: #F2F5F0; 
+    color: #677353;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 70px;
+}
+
+.page-not-found .pnf-content h1 {
+    font-size: 120px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    
+}
+
+.page-not-found .pnf-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.page-not-found .pnf-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-not-found .pnf-content .hero-btn {
+    background-color: #677353;
+    color: #F2F5F0;
+    padding: 12px 30px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.page-not-found .pnf-content .hero-btn:hover {
+    opacity: 0.8;
+}
+
+@media(max-width:1024px){
+    .page-not-found .pnf-content h1 { 
+        font-size: 90px; 
+    }
+    .page-not-found .pnf-content h2 {
+         font-size: 32px;
+         }
+    .page-not-found .pnf-content p {
+         font-size: 14px; 
+        }
+    .page-not-found .pnf-content .hero-btn {
+         padding: 10px 25px; 
+         font-size: 14px; 
+        }
+}
+
+@media(max-width:360px){
+    .page-not-found .pnf-content h1 {
+         font-size: 60px; 
+        }
+    .page-not-found .pnf-content h2 { 
+        font-size: 24px; 
+    }
+    .page-not-found .pnf-content p {
+         font-size: 12px; 
+        }
+    .page-not-found .pnf-content .hero-btn {
+         padding: 8px 20px;
+          font-size: 12px; 
+        }
+}
