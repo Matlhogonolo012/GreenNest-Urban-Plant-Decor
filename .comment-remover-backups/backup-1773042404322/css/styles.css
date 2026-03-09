@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+*{
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
@@ -52,6 +52,7 @@
     opacity: 0.8;
 }
 
+
 .hero-section {
     display: flex;
     align-items: center;
@@ -97,30 +98,25 @@
     height: 90vh;
 }
 
-.nav-toggle {
-    display: none;
-}
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
 
-.close-icon {
-    display: none;
-}
-
-.nav-center .quote-btn {
+.nav-toggle { display: none; }
+.hamburger { display: none; cursor: pointer; }
+.close-icon { display: none; }
+.nav-center .quote-btn{
     width: fit-content;
     margin: 10px auto;
 }
+
+
 
 .mobile-quote {
     display: none;
 }
 
 
-@media(max-width:900px) {
+
+@media(max-width:900px){
 
     .nav-center {
         display: none;
@@ -151,15 +147,15 @@
         display: inline-block;
     }
 
-    .nav-toggle:checked~.nav-center {
+    .nav-toggle:checked ~ .nav-center {
         display: flex;
     }
 
-    .nav-toggle:checked+.hamburger .hamburger-icon {
+    .nav-toggle:checked + .hamburger .hamburger-icon {
         display: none;
     }
 
-    .nav-toggle:checked+.hamburger .close-icon {
+    .nav-toggle:checked + .hamburger .close-icon {
         display: block;
     }
 }
