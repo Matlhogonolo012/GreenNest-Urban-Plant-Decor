@@ -17,14 +17,14 @@
     line-height: 1.5;
 }
 
-/* Grid */
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-/* Card styling */
+
 .service-card {
     color: #677353;
     border-radius: 2px;
@@ -53,7 +53,7 @@
     line-height: 1.4;
 }
 
-/* Responsive */
+
 @media(max-width: 900px) {
     .services-section {
         padding: 60px 20px;
