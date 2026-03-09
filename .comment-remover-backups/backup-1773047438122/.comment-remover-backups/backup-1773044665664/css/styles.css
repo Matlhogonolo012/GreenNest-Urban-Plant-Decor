@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     font-family: "Poppins", sans-serif;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-
+/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -41,6 +41,7 @@
     font-size: 14px;
 }
 
+/* Desktop Get Quote button - original styling preserved */
 .nav-right .quote-btn {
     background-color: #F2F5F0;
     color: #677353;
@@ -49,11 +50,37 @@
     text-decoration: none;
 }
 
+/* Mobile Get Quote button inside hamburger menu */
+.nav-center .quote-btn.mobile-quote {
+    background-color: #F2F5F0;
+    color: #677353;
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+/* Hover effect for all links/buttons */
 .navbar a:hover {
     opacity: 0.8;
 }
 
+/* Hamburger */
+.nav-toggle {
+    display: none;
+}
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    display: none;
+}
+
+/* Hero Section */
 .hero-section {
     display: flex;
     align-items: center;
@@ -92,54 +119,23 @@
 
 .hero-image {
     flex: 5;
-    width: 45vw;
-    height: 90vh;
-    overflow: hidden;
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 45vw;
+    height: 90vh;
 }
 
-.nav-toggle {
-    display: none;
-}
+/* Mobile / Responsive */
+@media(max-width:900px) {
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.close-icon {
-    display: none;
-}
-
-.mobile-quote-btn {
-    display: none;
-    background-color: #f5f0f4;
-    color: #677353 !important;
-    padding: 8px 18px;
-    border-radius: 4px;
-    text-decoration: none;
-    text-align: center;
-    width: fit-content;
-    margin: 10px auto;
-}
-
-@media(max-width:1024px) {
-
-    .mobile-quote-btn {
-        display: inline-block;
-    }
-
+    /* Navbar adjustments */
     .navbar {
-        padding: 20px 40px;
+        padding: 20px 40px; /* side padding on mobile */
     }
 
     .nav-left {
-        margin-right: 20px;
+        margin-right: 20px; /* space between logo and hamburger */
     }
 
     .hamburger {
@@ -165,34 +161,34 @@
     }
 
     .desktop-quote {
-        display: none;
+        display: none; /* hide desktop button */
     }
 
     .mobile-quote {
         display: inline-block;
     }
 
-    .nav-toggle:checked~.nav-center {
+    .nav-toggle:checked ~ .nav-center {
         display: flex;
     }
 
-    .nav-toggle:checked+.hamburger .hamburger-icon {
+    .nav-toggle:checked + .hamburger .hamburger-icon {
         display: none;
     }
 
-    .nav-toggle:checked+.hamburger .close-icon {
+    .nav-toggle:checked + .hamburger .close-icon {
         display: block;
     }
 
-
+    /* Hero section mobile adjustments */
     .hero-section {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 120px 20px 60px;
+        flex-direction: column;       /* stack text & image */
+        align-items: flex-start;      /* left align text with image */
+        padding: 120px 20px 60px;     /* top padding for fixed navbar */
     }
 
     .hero-image {
-        order: -1;
+        order: -1;                    /* image appears first */
         width: 100%;
     }
 
@@ -202,14 +198,14 @@
     }
 
     .hero-text {
-        padding-left: 20px;
+        padding-left: 20px;           /* align with image */
         padding-right: 20px;
-        margin-top: 20px;
-        max-width: 600px;
+        margin-top: 20px;             /* space between image & text */
+        max-width: 600px;             /* optional width limit */
     }
 
     .hero-text h1 {
-        font-size: 42px;
+        font-size: 42px;              /* smaller headline */
     }
 
     .hero-text p {
@@ -219,6 +215,6 @@
 
     .hero-btn {
         display: inline-block;
-        margin-top: 30px;
+        margin-top: 30px;             /* move button lower */
     }
 }
